@@ -1,0 +1,56 @@
+project:
+  type: website
+
+website:
+  title: "ProteoBench"
+  favicon: "static/img/proteobench-favicon.png"
+
+  navbar:
+    logo: "static/img/proteobench-logo-horizontal-inverted.svg"
+    logo-alt: ProteoBench logo
+    title: false
+    foreground: "#FFFFFF"
+    background: "#314159"
+    right:
+      - text: Code of Conduct
+        file: CODE_OF_CONDUCT.md
+      - icon: github
+        href: https://github.com/ProteoBench/ProteoBench
+        aria-label: GitHub
+  sidebar:
+    style: "floating"
+    collapse-level: 1
+    logo: "static/img/proteobench-logo-horizontal-inverted.svg"
+    logo-alt: ProteoBench logo
+    contents:
+      - text: About
+        file: index.qmd
+      - file: how-to-use.md
+      - file: how-to-contribute.md
+      - file: glossary.md
+      - file: CODE_OF_CONDUCT.md
+  site-url: "https://proteobench.github.io"
+  repo-url: https://github.com/ProteoBench/proteobench.github.io
+  repo-actions: [source, edit]
+  page-footer: |
+    <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0</a> license.</small>
+  # google-analytics:
+  #   tracking-id: <add id here>
+  #   storage: none
+  #   anonymize-ip: true
+  open-graph: true
+  twitter-card: true
+
+format:
+  html:
+    css: "static/css/custom-styles.css"
+    theme: cosmo
+    toc: true
+    toc-depth: 4
+    smooth-scroll: true
+    link-external-icon: false
+    link-external-newwindow: true
+    #linkcolor: "#314159"
+
+resources: ["CNAME"]
+bibliography: references.bib
